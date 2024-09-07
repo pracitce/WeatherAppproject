@@ -1,8 +1,10 @@
 function handleSearchSubmit(event){
 event.preventDefault();
+
 let searchInput = document.querySelector("#search-form-input");
-let cityElement = documen.querySelector("#city");
-cityElement = searchInput.value;
+
+let cityElement = document.querySelector("#city");
+cityElement.innerHTML = searchInput.value;
 }
 
 
@@ -11,5 +13,6 @@ cityElement = searchInput.value;
 
 
 
-let searchformElement = document.querySelector("search-form");
-searchformElement.addEventListener("submit",handleSearchSubmit);
+let searchFormElement = document.querySelector("#search-form");
+
+searchFormElement.addEventListener("submit",handleSearchSubmit);
