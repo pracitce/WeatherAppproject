@@ -42,10 +42,24 @@ header{
 
 .weather-forecast-date{
   text-align: center;
-  color: orange;
+  color: #3700ff;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom:10px;
 }
+
+.weather-forecast-icon{
+  font-size: 35px;
+  text-align: center;
+
+}
+
+.weather-forecast-temperature{
+
+  text-align: center;
+  color: rgb(56, 52, 53);
+}
+
 
 
 .weather-app-data{
