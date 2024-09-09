@@ -5,8 +5,9 @@ body{
 
 .weather-app{
   background: #f7df0d;
-  max-width: 600px;
-  margin: 45px auto;
+  width: 600px;
+
+  margin: 65px auto;
   padding: 30px;
   box-shadow: 0,30px,50px,rgba(65,50,100,0.08);
   border-radius: 16px;
@@ -37,6 +38,15 @@ header{
   border-radius: 6px;
 
 }
+
+
+.weather-forecast-date{
+  text-align: center;
+  color: orange;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 
 .weather-app-data{
   display: flex;
