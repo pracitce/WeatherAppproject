@@ -57,7 +57,17 @@ let searchInput = document.querySelector("#search-form-input");
 searchCity(searchInput.value);
 }
 
-function displayForecast(){
+function getForeCast(){
+
+
+}
+function displayForecast(city){
+let apiKey ="cfab87o4ce22c3f3ec5eaaftfbfbdc0e";
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+
+}
+
+
 
   let forecast = document.querySelector("#forecast"); 
 
