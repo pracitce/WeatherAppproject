@@ -65,7 +65,7 @@ searchCity("New York")
 
 
 
-let forecast = document.querySelector("forecast");
+let forecast = document.querySelector("#forecast");
 
 forecast.innerHTML = `
 <div class="weather-forecast-day">
