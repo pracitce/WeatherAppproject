@@ -57,19 +57,15 @@ let searchInput = document.querySelector("#search-form-input");
 searchCity(searchInput.value);
 }
 
-function getForeCast(){
 
 
-}
-function displayForecast(city){
+function getForeCast(city){
 let apiKey ="cfab87o4ce22c3f3ec5eaaftfbfbdc0e";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
-
+let apiUrl = `https://api.shecodes.io/weather/v1/forcast?query=${city}&key=${apiKey}&unit=metri`;
 }
 
+function displayForecast(response ){
 
-
-  let forecast = document.querySelector("#forecast"); 
 
   let days = ["Tue","Wed","Thur","Fri","Sat",];
   let forecastHtml = "";
@@ -91,17 +87,18 @@ let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${api
     </div>
     `;
   });
- let forecastElement = document.querySelector("#forecast");
+ 
+  let forecastElement = document.querySelector("#forecast");
  forecastElement.innerHTML = forecastHtml;
  
-};
+}
 
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit",handleSearchSubmit);
 
 searchCity("New York");
-
+getForeCast();
 displayForecast();
 
 
